@@ -1,24 +1,24 @@
 {
-  "name": "antd-tools",
-  "version": "7.3.1",
-  "description": "tools for ant design",
+  "name": "galaxy-tools",
+  "version": "0.0.1",
+  "description": "tools for Galaxy",
   "keywords": [
     "react",
     "tools"
   ],
-  "homepage": "http://github.com/ant-design/antd-tools",
+  "homepage": "http://github.com/UrsaMino/galaxy-tools",
   "author": "yiminghe@gmail.com",
   "repository": {
     "type": "git",
-    "url": "git@github.com:ant-design/antd-tools.git"
+    "url": "git@github.com:UrsaMino/galaxy-tools.git"
   },
   "bugs": {
-    "url": "http://github.com/ant-design/antd-tools/issues"
+    "url": "http://github.com/UrsaMino/galaxy-tools/issues"
   },
   "license": "MIT",
   "bin": {
-    "antd-tools": "./bin/antd-tools.js",
-    "antd-tools-run": "./bin/antd-tools-run.js"
+    "galaxy-tools": "./bin/galaxy-tools.js",
+    "galaxy-tools-run": "./bin/galaxy-tools-run.js"
   },
   "scripts": {
     "pub": "git push origin && npm publish",
@@ -26,6 +26,11 @@
     "lint": "eslint lib",
     "prettier": "node ./script/prettier.js",
     "test": "jest"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
   },
   "dependencies": {
     "@babel/core": "^7.2.0",
@@ -95,6 +100,9 @@
     "webpackbar": "^3.1.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "^7.5.2",
+    "@commitlint/config-angular": "^7.5.0",
+    "commitizen": "^3.0.7",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.10.0",
     "eslint-config-airbnb": "^17.1.0",
